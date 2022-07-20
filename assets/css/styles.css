@@ -1,0 +1,194 @@
+
+
+/*==========BREAKPOINTS============
+======Dispositivos pequeños=======
+@media screen and (min-width:320px){
+
+}
+
+======Dispositivos medianos=======
+@media screen and (min-width:500px){
+    
+}
+======Tablets=======
+@media screen and (min-width:768px){
+    .lg\:text-col{
+        columns: auto auto auto;
+} 
+}
+
+======Notebooks=======
+@media screen and (min-width:992px){
+    
+}
+
+======Dispositivos grandes=======
+@media screen and (min-width:1042px){
+    
+*/
+*{
+    font-family: 'Frank Ruhl Libre', serif;
+   
+}
+
+body {
+    margin: 0;
+    background-image: url(https://i.pinimg.com/736x/df/96/85/df96858e71138da5ca24eb0908d9eb73--background-noise-a-tv.jpg);
+    font-family: 'Frank Ruhl Libre', serif;
+  }
+  
+  h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: bolder;
+  }
+  
+  .header {
+    height: 50vh;
+   /* background-image: url("../images/cool-background.png");*/
+   background-color: #dfdfdfe8;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 100px 0;
+  }
+  
+  .header h1,
+  .header p {
+    margin-top: 0;
+    margin-bottom: .25rem;
+  }
+  
+  /* card featured */
+  .card i {
+    font-size: 2rem;
+  }
+  
+  /* banners */
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .banner >* {
+    width: 125px;
+    height: 125px;
+    background-color: #dfdfdfe8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+  }
+  
+  .banner-y {
+    width: 100%;
+    height: 750px;
+    background-color: #dfdfdfe8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+  }
+  
+  .footer {
+    background-color: #dfdfdfe8;
+  }
+
+
+/* selector de elemento | tipo */
+p {
+    color: rgb(43, 35, 156);
+  }
+  
+  p {
+    color: rgb(17, 8, 11);
+  }
+  
+  /* selector clase . */
+  .parrafo1 {
+    color: blue;
+  }
+  
+  .size-2rem {
+    font-size: 2rem;
+  }
+  
+  /* Selector de ID # */
+  #parrafo2 {
+    color: aqua;
+  }
+  
+  /* pseudo-clases */
+  p:hover {
+    color: rgb(25, 125, 77);
+  }
+  
+  /* pseudo-elementos */
+  .parrafo1::before {
+    content: "📁";
+  }
+  
+  .parrafo1::after {
+    content: "↗️";
+  }
+  
+  [href="#"] {
+    color: black;
+    text-decoration: none;
+  }
+  
+  ::selection {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 992px;
+    margin: 0 auto; 
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-container {
+    width: 150px;
+    height: 150px;
+    background-image: url("../img/profile.png");
+    background-size: contain;
+    border-radius: 50%;
+  }
+  
+  /* .image-container img {
+    border-radius: 50%;
+  } */
+  
+  p {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  @media screen and (min-width: 500px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    .image-container {
+      order: 2;
+    }
+  
+    p {
+      width: 50%;
+      order: 1;
+    }
+  }
